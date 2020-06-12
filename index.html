@@ -7,24 +7,31 @@
     <link rel="stylesheet" href="css/main.css">
 	<title>Whack A Mole</title>
 </head>
-<body>
-	<div id="Menu">
-		<h1>Whack A Mole</h1>
-		<span class="Rules">How to play...</span>
-		<ol>
-			<li>Lorem ipsum dolor sit amet, consectetur.</li>
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est sapiente explicabo officia quia maiores?</li>
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, perferendis.</li>
-		</ol>
+<body>	
+	<div id="menu">
+		<h1>Whack a Mole</h1>
+		<div class="rules">
+			<span class="how">How to play...</span>
+			<ol>
+				<li>Lorem ipsum dolor sit amet, consectetur.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est sapiente explicabo officia quia maiores?</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, perferendis.</li>
+			</ol>
+		</div>
 		<div class="custom-select">
+		    <span class="level">Level</span>
 		    <select id="levels">
-		        <option value="10">Easy</option>
-		        <option value="15">Medium</option>
-		        <option value="25">Hard</option>
-		        <option value="38">Extreme</option>                                      
+		        <option value="3">Easy</option>
+		        <option value="6">Medium</option>
+		        <option value="9">Hard</option>
+		        <option value="15">Extreme</option>                        
 		    </select>
         </div>
-        <button id="start">Start!</button>
+        <button id="start">Start !</button>
+	</div>
+	
+	<div id="timer">
+		<span id="no">3...</span>
 	</div>
 
 	<div id="game">
@@ -55,7 +62,7 @@
         <div class="hole hole9">
             <div class="mole"></div>
         </div>
-        <div class="hole hole10">
+        <!-- <div class="hole hole10">
             <div class="mole"></div>
         </div>
         <div class="hole hole11">
@@ -72,12 +79,13 @@
         </div>
         <div class="hole hole15">
             <div class="mole"></div>
-        </div>
+        </div> -->
+        <div id="result">
+			<span>Your score is <span id="score">0</span></span>
+			<button id="ok">Ok</button>
+		</div>
 	</div>
 
-	<div id="result">
-		<span>Your score is <span id="score">0</span></span>
-		<button id="ok">Ok</button>
-	</div>
+	
 </body>
 </html>
