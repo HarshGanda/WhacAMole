@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
 	<title>Whack A Mole</title>
 </head>
 <body>	
@@ -13,27 +14,27 @@
 		<div class="rules">
 			<span class="how">How to play...</span>
 			<ol>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est sapiente explicabo officia quia maiores?</li>
-				<li>Select the difficulty level and click start!</li>
+				<li>Hit the mole on the <Strong>HEAD / FACE</Strong> when it appears.</li>
+				<li>Successful hit will grant a score.</li>
+				<li>Select the difficulty level and click start to play!</li>
 			</ol>
 		</div>
 		<div class="custom-select">
-		    <span class="level">Level</span>
+		    <label class="level" for="levels">Level</label>
 		    <select id="levels">
-		        <option value="3">Easy</option>
-		        <option value="6">Medium</option>
-		        <option value="9">Hard</option>
-		        <option value="15">Extreme</option>                        
-		    </select>
+		        <option tabindex=0 value="3">Easy</option>
+		        <option tabindex=0 value="6">Medium</option>
+		        <option tabindex=0 value="9">Hard</option>
+		        <option tabindex=0 value="15">Extreme</option>
+            </select>
         </div>
-        <button id="start">Start !</button>
+        <button tabindex=0 id="start">Start !</button>
 	</div>
-	
 	<div id="timer">
-		<span id="no">3...</span>
+		<span class="no no3">3...</span>
+        <span class="no no2">2..</span>
+        <span class="no no1">1.</span>
 	</div>
-
 	<div id="game">
 		<div class="hole hole1">
             <div class="mole"></div>
@@ -85,7 +86,6 @@
 			<button id="ok">Ok</button>
 		</div>
 	</div>
-
     <script src="js/main.js"></script>
 </body>
 </html>

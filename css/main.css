@@ -9,20 +9,24 @@ body {
   font-family: Lato, sans-serif; }
 
 #menu {
-  background: #2e5a96;
+  background: #E7E393;
   overflow: hidden;
+  height: 100vh;
   text-align: center; }
   #menu h1 {
     font-size: clamp(2.5rem, 10vw, 5rem);
     font-weight: 700;
     font-family: Tillana, serif;
     margin: 1em 0;
-    color: #a14f12;
+    color: #60492C;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
-    -webkit-text-stroke: 1px black; }
+    -webkit-text-stroke: 1px white; }
   #menu .rules {
     text-align: left;
-    margin-left: 5em; }
+    margin-left: 2em; }
+    @media screen and (min-width: 40em) {
+      #menu .rules {
+        margin-left: 5em; } }
     #menu .rules .how {
       display: block;
       font-family: Tillana, serif;
@@ -48,15 +52,18 @@ body {
     font-size: clamp(1rem, 3vw, 2rem);
     padding: 0.5em 1.5em;
     cursor: pointer;
+    color: white;
     border-radius: 10px;
-    background: #a14f12;
+    background: #60492C;
     text-align: center;
     text-decoration: none;
     border: none;
     font-weight: 700;
     margin: 1em 0; }
     #menu #start:hover {
-      background-color: #73380d; }
+      background-color: #3d2e1c; }
+    #menu #start:focus {
+      background-color: #2c2114; }
 
 #timer {
   display: none;
@@ -64,14 +71,36 @@ body {
   width: 100%;
   height: 100%;
   background-color: #232323; }
-  #timer #no {
+  #timer .no {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 120px;
     font-weight: 700;
-    color: white; }
+    color: #E7E393; }
+  #timer .no3 {
+    animation: disappear 0.5s forwards; }
+  #timer .no2 {
+    animation: appear 0.5s forwards;
+    animation: disappear 0.5s forwards 1s;
+    opacity: 0; }
+  #timer .no1 {
+    animation: appear 0.5s forwards 1s;
+    animation: disappear 0.5s forwards 2s;
+    opacity: 0; }
+
+@keyframes appear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes disappear {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 
 #game {
   position: relative;
@@ -84,13 +113,20 @@ body {
   justify-content: space-around;
   align-content: center;
   align-items: center;
-  padding: 10px 0; }
+  padding: 10px 0;
+  cursor: url("../svg/hammer.svg"), auto; }
+  #game:active {
+    cursor: url("../svg/hammer-active.svg"), auto; }
   #game .hole {
-    flex-basis: 30%;
+    flex-basis: 45%;
     overflow: hidden;
     position: relative;
-    height: 20%;
+    height: 12%;
     width: 100%; }
+    @media screen and (min-width: 40em) {
+      #game .hole {
+        flex-basis: 30%;
+        height: 20%; } }
     #game .hole::after {
       display: block;
       background: url("../svg/pot.svg") bottom center no-repeat;
@@ -122,6 +158,7 @@ body {
       #game .hole.up .mole {
         top: 15%; } }
   #game #result {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -130,7 +167,7 @@ body {
     border: 0.1em solid black;
     z-index: 5;
     text-align: center;
-    background-color: white;
+    background-color: #E7E393;
     width: 50%; }
     #game #result span {
       display: inline-block;
@@ -147,11 +184,14 @@ body {
       padding: 0.5em 1.5em;
       cursor: pointer;
       border-radius: 10px;
-      background: #a14f12;
+      background: #60492C;
+      color: white;
       text-align: center;
       text-decoration: none;
       border: none;
       font-weight: 700;
       margin: 1em 0; }
       #game #result #ok:hover {
-        background-color: #73380d; }
+        background-color: #3d2e1c; }
+      #game #result #ok:focus {
+        background-color: #2c2114; }
