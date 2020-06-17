@@ -1,4 +1,4 @@
-# Whack A Mole
+# Whac A Mole
 
 ## Introduction
 
@@ -6,7 +6,7 @@ This is a simple one page [Whac a Mole](https://en.wikipedia.org/wiki/Whac-A-Mol
 
 The game is available at [https://harshganda.github.io/WhackAMole](https://harshganda.github.io/WhackAMole/)
 
-![image-name](link)
+![Game Menu](doc/rules.png)
 
 ## Working
 
@@ -16,7 +16,7 @@ The page is basically divided into 3 divs (which contain multiple divs) -
 2. Timer - A timer of 3 sec is shown before the start of the game which is implemented using animations. It works simply by changing the opacity and adding animation-delay.
 3. Game - Multiple holes are displayed based on difficulty level selected and moles peep out randomly from those holes for a random time period. This is controlled by JavaScript.
 
-![image-name](link)
+![Game](doc/game.png)
 
 ## How to Play
 
