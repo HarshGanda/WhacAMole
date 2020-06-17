@@ -50,7 +50,7 @@ function randomHole(holes){
 
 /* Random mole peeps for a random time interval*/
 function peep() {
-    const time = randomTimeInterval(350, 1100);
+    const time = randomTimeInterval(300, 1600);
     const hole = randomHole(holes); 
     hole.classList.add('up');
     setTimeout(() => {

@@ -1,5 +1,7 @@
 # Whac A Mole
 
+#### [https://harshganda.github.io/WhackAMole](https://harshganda.github.io/WhackAMole/)
+
 ## Introduction
 
 This is a simple one page [Whac a Mole](https://en.wikipedia.org/wiki/Whac-A-Mole) game build using html, css and javascript.
@@ -29,6 +31,8 @@ The page is basically divided into 3 divs (which contain multiple divs) -
    - The time limit is 20 secs.
 2. Hit the mole when it appears with the hammer by clicking on it's face.
 3. A successful hit will make the mole angry (the image will change).
+
+![Gif](doc/whacamole.gif)
 
 **Note:** Since an image is being used for the cursor, it may cause some issues on click (hitting the mole). This also increases the difficulty a little bit ;p
 
