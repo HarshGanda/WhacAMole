@@ -6,7 +6,7 @@
 
 This is a simple one page [Whac a Mole](https://en.wikipedia.org/wiki/Whac-A-Mole) game build using html, css and javascript.
 
-The game is available at [https://harshganda.github.io/WhackAMole](https://harshganda.github.io/WhacAMole/)
+The game is available at [https://harshganda.github.io/WhacAMole](https://harshganda.github.io/WhacAMole/)
 
 ![Game Menu](doc/rules.png)
 
